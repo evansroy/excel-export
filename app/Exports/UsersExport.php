@@ -23,6 +23,7 @@ class UsersExport implements FromCollection, WithHeadings,WithMapping
     public function map($user): array
     {
         Log::info('map() function called');
+        // You can use either of the following methods to convert the dates
         // $hdob = Carbon::createFromTimestamp($user->hdob)->toDateTimeString();
         // $hdob = Carbon::createFromTimestamp($user->hdob)->format('Y-m-d');
        
